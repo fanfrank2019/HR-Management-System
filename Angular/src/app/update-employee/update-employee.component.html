@@ -1,0 +1,39 @@
+<app-admin-page></app-admin-page>
+<div class="wrapper">
+    <div class="loginform">
+        <h2>Enter Information</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="field-wrapper">
+                <label>Employee ID</label>
+                <input type="number" #updateId>
+            </div>
+            <div class="field-wrapper">
+                <label>First Name</label>
+                <input type="text" id="firstName" required [(ngModel)]="employee.firstName" name="firstName">
+            </div>
+            <div class="field-wrapper">
+                <label>Last Name</label>
+                <input type="text" id="lastName" required [(ngModel)]="employee.lastName" name="lastName">
+            </div>
+            <div class="field-wrapper">
+                <label>Salary</label>
+                <input type="number" id="salary" required [(ngModel)]="employee.salary" name="salary">
+            </div>
+            <div class="field-wrapper">
+                <label>username</label>
+                <input type="text" id="username" required [(ngModel)]="employee.username" name="username">
+            </div>
+            <div class="field-wrapper">
+                <label>password</label>
+                <input type="password" id="password" required [(ngModel)]="employee.password" name="password">
+            </div>
+            <div class="field-wrapper">
+                <button (click)="getVal(updateId.value)" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div [hidden]="!submitted" style="text-align: center;">
+    <h4>Updates Has Been Made</h4>
+</div>

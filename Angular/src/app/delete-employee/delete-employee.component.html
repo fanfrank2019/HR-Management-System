@@ -1,0 +1,20 @@
+<app-admin-page></app-admin-page>
+<div class="wrapper">
+    <div class="loginform">
+        <h2>Enter Employee ID</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="field-wrapper">
+                <label>Employee ID</label>
+                <input type="number" #deleteId>
+            </div>
+            <div class="field-wrapper">
+                <button (click)="getVal(deleteId.value)" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div [hidden]="!submitted" style="text-align: center;">
+    <h4>Employee Has Been Removed</h4>
+</div>
+

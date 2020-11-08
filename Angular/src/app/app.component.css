@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+}
+
+.back {
+  background-color: aliceblue;
+}
+
+.header {
+  background-color: aquamarine;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.wrapper {
+  text-align: center;
+  padding-top: 140px;
+  margin: 5px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loginform {
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  border: solid aquamarine 2px;
+  text-align: left;
+  display: inline-block;
+  width: 350px;
+  height: 450px;
+}
+
+h2 {
+  margin: 20px;
+  color: aquamarine;
+  font-size: 30px;
+}
+
+.field-wrapper {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid aquamarine;
+  font-size: 20px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  color: aquamarine;
+}

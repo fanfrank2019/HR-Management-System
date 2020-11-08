@@ -1,0 +1,15 @@
+.panel-body {
+  border: 2px solid aquamarine;
+}
+
+th {
+  width: 5%;
+  border: 1px dashed aquamarine;
+}
+
+td {
+  width: 5%;
+  border: 1px dashed aquamarine;
+  text-align: center;
+  font-size: 30px;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  border: 2px solid aquamarine;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font: menu;
+  font-size: 20px;
+  padding: 5px;
+  display: block;
+  margin: 10px;
+  background: aquamarine;
+  color: white;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}

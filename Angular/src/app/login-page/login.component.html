@@ -1,0 +1,21 @@
+
+<div class="wrapper">
+    <div class="loginform">
+      <h2>Sign in</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="field-wrapper">
+          <input type="text" name="username" placeholder="username">
+        </div>
+        <div class="field-wrapper">
+          <input type="password" name="password" placeholder="password" #password>
+        </div>
+        <div class="field-wrapper">
+          <button (click)="getPass(password.value)" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+<div [hidden]="!submitted" style="text-align: center;">
+  <h4>You entered wrong password</h4>
+</div>
